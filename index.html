@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PginaprincipalAVA</title>    
+    <title>PginaprincipalAVA</title>
 
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300,700">
@@ -58,7 +58,6 @@
 
             </nav>
             <!-- ---------------------------Menu End------------------- -->
-
         </div>
     </header>
 
@@ -73,12 +72,13 @@
                             <a href="#">Inicio</a>
                         </div>
                         <!-- ---------------------------Slider Start------------------- -->
-                        <div class="swiper-container review_slider">
-                            <div id="week_slider" class="swiper-wrapper">
+                        <div style="display: flex; align-items: center;">
+                            <div class="swiper-container review_slider">
+                                <div id="week_slider" class="swiper-wrapper"></div>
                             </div>
+                            <button class="review_slider-button review_slider-next"><i class="fas fa-arrow-right"></i></button>
+                            <button class="review_slider-button review_slider-prev"><i class="fas fa-arrow-left"></i></button>
                         </div>
-                        <button class="review_slider-button review_slider-next"><i class="fas fa-arrow-right"></i></button>
-                        <button class="review_slider-button review_slider-prev"><i class="fas fa-arrow-left"></i></button>
                         <!-- ---------------------------Slider End------------------- -->
 
                         <!-- ---------------------------Art Section Start------------------- -->
@@ -112,13 +112,12 @@
 
     <!-- App JS -->
     <script src="js/target-admin.js"></script>
-    
+
     <!-- Plugin JS -->
     <script src="js/demos/dashboard.js"></script>
     <script src="js/demos/calendar.js"></script>
     <script src="js/demos/charts/morris/area.js"></script>
     <script src="js/demos/charts/morris/donut.js"></script>
-
     <script type="text/javascript">
         var sliderInnerHTML = '';
         courses.map((data) => {
@@ -196,7 +195,7 @@
                                 </div>
                                 <div class="art_box_main">
                                     <div class="art_box_main_logo">
-                                        <i class="fas fa-play-circle icon_red "></i>
+                                        <i class="fas fa-play-circle "></i>
                                     </div>
                                     <div class="art_box_main_text">
                                         <p>${lesson.class_type}</p>`

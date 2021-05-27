@@ -62,12 +62,6 @@ header {
 
 /* ----------------------------------- Menu Section Start --------------------------- */
 
-
-/* ----------------------------------- Menu Section Start --------------------------- */
-
-
-/* ----------------------------------- Menu Section Start --------------------------- */
-
 .header_menu ul {
     display: flex;
     justify-content: space-between;
@@ -112,21 +106,9 @@ header {
 
 /* ----------------------------------- Menu Section End --------------------------- */
 
-
-/* ----------------------------------- Menu Section End --------------------------- */
-
-
-/* ----------------------------------- Menu Section End --------------------------- */
-
 section {
     position: relative;
 }
-
-
-/* ---------------------------- Main Start----------------------------- */
-
-
-/* ---------------------------- Main Start----------------------------- */
 
 
 /* ---------------------------- Main Start----------------------------- */
@@ -136,7 +118,7 @@ section {
     background-color: #f8f8f8;
     border: solid 12px #ffffff;
     border-radius: 10px;
-    position: absolute;
+    position: relative;
     top: -55px;
     width: 100%;
     margin: auto;
@@ -173,18 +155,13 @@ section {
 
 /* -------------------- Slider Start ---------------------- */
 
-
-/* -------------------- Slider Start ---------------------- */
-
-
-/* -------------------- Slider Start ---------------------- */
-
 .slider_content {
     background-color: #9accdc;
     padding: 26px 0px 0px 0px;
     width: 390px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    margin: auto;
 }
 
 .slider_content button {
@@ -248,10 +225,11 @@ section {
 }
 
 .pricing_cart_text ul {
-    padding-top: 13px;
+    padding-top: 0px;
 }
 
 .pricing_cart_text p {
+    margin: 0;
     font-size: 12px;
     color: #747474;
     font-family: "Ubuntu-Regular";
@@ -333,14 +311,12 @@ section {
 
 .review_slider-prev {
     position: absolute;
-    left: -1%;
-    top: 15%;
+    left: 0;
 }
 
 .review_slider-next {
     position: absolute;
-    right: -1%;
-    top: 15%;
+    right: 0%;
 }
 
 .review_slider-button {
@@ -356,18 +332,6 @@ section {
 
 
 /* -------------------- Slider End------------------ ---------------------- */
-
-
-/* -------------------- Slider End------------------ ---------------------- */
-
-
-/* -------------------- Slider End------------------ ---------------------- */
-
-
-/* ------------------------------------Art Section start--------------------------------- */
-
-
-/* ------------------------------------Art Section start--------------------------------- */
 
 
 /* ------------------------------------Art Section start--------------------------------- */
@@ -415,12 +379,14 @@ section {
 
 .art_box_main {
     display: flex;
-    margin-top: 40px;
+    margin-top: 10px;
     position: relative;
+    height: 100px;
+    align-items: center;
 }
 
 .art_box_main_text {
-    width: 85%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #dadada;
@@ -428,6 +394,12 @@ section {
     margin-left: 64px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+.art_box_main_logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .art_box_main_logo i {
@@ -439,7 +411,6 @@ section {
     left: 3px;
     color: #464646;
     transition: 0.5s ease-in-out;
-    bottom: -5px;
 }
 
 .art_box_main_logo i:hover {
@@ -448,8 +419,10 @@ section {
 
 .art_box_main_text p {
     color: #6f6f6f;
-    font-size: 19px;
+    font-size: 17px;
     font-family: "Humanst521";
+    margin: 0;
+    line-height: 1.3;
 }
 
 .art_box_main_text button {
@@ -457,7 +430,7 @@ section {
     color: #ffffff;
     font-size: 15px;
     text-transform: uppercase;
-    padding: 5px 10px;
+    padding: 0px 5px;
     border-radius: 10px;
     transition: 0.5s ease;
     border: none;
@@ -523,19 +496,21 @@ section {
 
 /* Main section End */
 
-@media (max-width:1328px) {
-    .main {
-        width: 95%;
-        left: 10px;
-    }
-}
-
 @media (max-width:1280px) {
     .sair_box {
         margin-right: 50px;
     }
     .header_menu {
         margin: 0 50px;
+    }
+}
+
+@media(max-width:1270px) {
+    .slider_content {
+        padding: 26px 0px 0px 0px;
+        width: 350px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
 }
 
@@ -546,27 +521,15 @@ section {
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
     }
-    .review_slider-prev {
-        left: 1%;
-        top: 14%;
-    }
-    .review_slider-next {
-        right: 1%;
-        top: 14%;
-    }
-    .slider_content {
-        margin-left: 22px;
-    }
 }
 
 @media(max-width:1050px) {
     .art_box_main_logo i {
         font-size: 66px;
         border-right: 7px solid #ffffff;
-        bottom: 4px;
     }
     .art_box_main_logo .icon_red {
-        bottom: -6px;
+        bottom: 0px;
     }
 }
 
@@ -603,14 +566,13 @@ section {
         padding-left: 20px;
     }
     .art_box_main_logo i {
-        font-size: 80px;
+        font-size: 70px;
         border-right: 5px solid #ffffff;
-        bottom: -15px;
         z-index: 1;
         background-color: #ffffff;
     }
     .art_box_main_logo .icon_red {
-        bottom: -12px;
+        bottom: 0px;
     }
     .swiper-slide .slider_content_ex span {
         display: none;
@@ -640,32 +602,31 @@ section {
 
 @media (max-width:767px) {
     .container {
-        max-width: 594px;
         width: 100%;
         margin: auto;
     }
-    .review_slider-next {
-        top: 12%;
-    }
-    .review_slider-prev {
-        top: 12%;
-    }
     .art_box_main_logo i {
-        font-size: 98px;
-        bottom: -4px;
+        font-size: 70px;
     }
     .art_box_main_logo .icon_red {
-        bottom: -21px;
+        bottom: 0px;
     }
 }
 
-@media (max-width:600px) {
-    .main {
-        left: 0px;
+@media (max-width:700px) {
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+    .art_box_main_logo i {
+        font-size: 70px;
+    }
+    .art_box_main_logo .icon_red {
+        bottom: 0px;
     }
 }
 
-@media (max-width:567px) {
+@media (max-width:710px) {
     .art_box_main_text {
         width: 80%;
         display: flex;
@@ -674,10 +635,9 @@ section {
     }
     .art_box_main_logo i {
         font-size: 85px;
-        margin-top: 5px;
     }
     .art_box_main_text button {
-        margin-top: 10px;
+        margin-top: 0px;
     }
     .main_last p {
         padding: 22px 82px;
@@ -685,10 +645,9 @@ section {
     .art_box_main_logo i {
         font-size: 105px;
         border-right: 2px solid #ffffff;
-        bottom: -5px;
     }
     .art_box_main_logo .icon_red {
-        bottom: -11px;
+        bottom: 0px;
     }
     .art_box_main_text {
         width: 80%;
@@ -706,10 +665,9 @@ section {
     .art_box_main_logo i {
         font-size: 105px;
         border-right: 2px solid #ffffff;
-        bottom: -8px;
     }
     .art_box_main_logo .icon_red {
-        bottom: -11px;
+        bottom: 0px;
     }
 }
 
@@ -721,16 +679,12 @@ section {
 }
 
 @media (max-width:450px) {
-    .review_slider-prev {
-        top: 13%;
-    }
-    .review_slider-next {
-        top: 13%;
+    .container {
+        padding: 5px;
     }
     .main {
-        width: 90%;
+        width: auto;
         margin: auto;
-        left: 10px;
     }
     .art_logo img {
         width: 100px;
@@ -752,28 +706,35 @@ section {
 }
 
 @media (max-width:395px) {
+    .container {
+        padding: 5px;
+    }
     .art_box_main_text button {
         font-size: 12px;
     }
     .main {
-        width: 90%;
+        width: auto;
         margin: auto;
-        left: 5px;
     }
 }
 
 @media (max-width:360px) {
+    .container {
+        padding: 5px;
+    }
     .art_box_main_logo i {
         font-size: 112px;
         border-right: 2px solid #ffffff;
-        bottom: -6px;
     }
     .art_box_main_logo .icon_red {
-        bottom: -21px;
+        bottom: 0px;
     }
 }
 
 @media (max-width:340px) {
+    .container {
+        padding: 5px;
+    }
     .slider_content {
         width: 100%;
         height: 100%;
@@ -783,21 +744,17 @@ section {
 }
 
 @media (max-width:335px) {
+    .container {
+        padding: 5px;
+    }
     .art_box_main_logo i {
         border-right: 1px solid #ffffff;
-        bottom: 0px;
     }
     .art_box_main_logo .icon_red {
-        bottom: -19px;
+        bottom: 0px;
     }
     .art_box_main_text button {
         font-size: 9px;
         padding: 5px;
-    }
-}
-
-@media (max-width:320px) {
-    .main {
-        left: 2px;
     }
 }
