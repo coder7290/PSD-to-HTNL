@@ -269,16 +269,22 @@ section {
     height: 35px;
 }
 
+.swiper-slide {
+    pointer-events: none;
+}
+
 .swiper-slide-active .slider_content {
     background-color: #c1c1c1;
 }
 
 .swiper-slide-active .slider_content_ex {
     background-color: #5c5c5c;
+    pointer-events: none;
 }
 
 .swiper-slide-next .slider_content {
     background-color: #1ed36f;
+    pointer-events: all;
 }
 
 .swiper-slide-next .slider_content_ex {
@@ -390,7 +396,7 @@ section {
     display: flex;
     justify-content: space-between;
     background-color: #dadada;
-    padding: 12px 42px;
+    padding: 12px 10px 12px 42px;
     margin-left: 64px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -430,7 +436,7 @@ section {
     color: #ffffff;
     font-size: 15px;
     text-transform: uppercase;
-    padding: 0px 5px;
+    padding: 5px 10px;
     border-radius: 10px;
     transition: 0.5s ease;
     border: none;
