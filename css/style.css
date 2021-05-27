@@ -209,13 +209,14 @@ section {
 
 .slider_content-date {
     display: flex;
+    margin: auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .slider_content-date h3 {
-    font-size: 95px;
+    font-size: 75px;
     color: #fefeff;
     font-family: "Ubuntu-Regular";
 }
@@ -236,8 +237,12 @@ section {
     margin-top: 15px;
 }
 
+.pricing_cart_text {
+    margin: auto;
+}
+
 .pricing_cart_text h3 {
-    font-size: 33px;
+    font-size: 25px;
     color: #ffffff;
     font-family: "Humanst521";
 }
@@ -278,6 +283,7 @@ section {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     padding-bottom: 10px;
+    cursor: pointer;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
@@ -343,6 +349,7 @@ section {
     border: none;
     font-size: 24px;
     border-radius: 50%;
+    cursor: pointer;
     padding: 5px;
     z-index: 100;
 }
