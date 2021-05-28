@@ -27,6 +27,10 @@ body {
     margin: auto;
 }
 
+.nav_bar {
+    background-color: #222222;
+}
+
 
 /*------------------ Top right corner icon start ------------- */
 
@@ -53,7 +57,7 @@ body {
 /*------------------ Top right corner icon End ------------- */
 
 header {
-    background-color: #732dce;
+    background-color: #16a085;
     padding: 75px 0 100px 0;
     margin-top: 32px;
     border-bottom: 12px solid #ffffff;
@@ -318,11 +322,13 @@ section {
 .review_slider-prev {
     position: absolute;
     left: 0;
+    margin-left: -12px;
 }
 
 .review_slider-next {
     position: absolute;
     right: 0%;
+    margin-right: -12px;
 }
 
 .review_slider-button {
@@ -427,8 +433,10 @@ section {
     color: #6f6f6f;
     font-size: 17px;
     font-family: "Humanst521";
-    margin: 0 0 10px 0;
     line-height: 1.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .art_box_main_text button {
@@ -576,6 +584,7 @@ section {
     .art_box_main_text p {
         font-size: 14px;
         padding-left: 20px;
+        margin: 0 0 10px 0;
     }
     .art_box_main_logo i {
         font-size: 70px;
