@@ -66,6 +66,11 @@ header {
 
 /* ----------------------------------- Menu Section Start --------------------------- */
 
+.header_menu {
+    width: 95%;
+    margin: auto;
+}
+
 .header_menu ul {
     display: flex;
     justify-content: space-between;
@@ -359,6 +364,7 @@ section {
     cursor: pointer;
     padding: 5px;
     z-index: 100;
+    display: flex;
 }
 
 
