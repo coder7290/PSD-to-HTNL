@@ -27,10 +27,6 @@ body {
     margin: auto;
 }
 
-.nav_bar {
-    background-color: #222222;
-}
-
 
 /*------------------ Top right corner icon start ------------- */
 
@@ -57,7 +53,7 @@ body {
 /*------------------ Top right corner icon End ------------- */
 
 header {
-    background-color: #16a085;
+    background-color: #732dce;
     padding: 75px 0 100px 0;
     margin-top: 32px;
     border-bottom: 12px solid #ffffff;
@@ -120,8 +116,8 @@ header {
 }
 
 .navbar-header i {
-    color: white;
     font-size: 20px;
+    color: gray;
 }
 
 .navbar-header .sign-out-link {
@@ -538,9 +534,6 @@ section {
 @media (max-width:1280px) {
     .sair_box {
         margin-right: 50px;
-    }
-    .header_menu {
-        margin: 0 50px;
     }
 }
 
