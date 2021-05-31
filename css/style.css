@@ -342,13 +342,11 @@ section {
 .review_slider-prev {
     position: absolute;
     left: 0;
-    margin-left: -12px;
 }
 
 .review_slider-next {
     position: absolute;
     right: 0%;
-    margin-right: -12px;
 }
 
 .review_slider-button {
